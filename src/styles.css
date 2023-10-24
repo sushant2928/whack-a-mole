@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 1rem;
+  font-family: system-ui, sans-serif;
+  color: black;
+  background-color: white;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 5px;
+  width: 100%;
+  height: auto;
+}
+.box {
+  border: 1px solid black;
+  margin: 0.25rem;
+  width: 100%;
+  aspect-ratio: 1;
+}
+
+.box.showMole {
+  background-color: red;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
